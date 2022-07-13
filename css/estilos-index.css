@@ -1,0 +1,58 @@
+@import './estilos.css';
+
+.main-central-section {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    /* min-width: 80%; */
+    font-size: large;
+    text-align: center;
+    margin-top: 3em;
+}
+
+.main-central-section > h3 {
+    font-size: 1.4em;
+}
+
+.login-form {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8em;
+}
+
+.form-input {
+    min-width: 89%;
+    font-size: 1em;
+    background-color: var(--background-color);
+    color: var(--base-color);
+}
+
+.user-field-restriction-label {
+    color: red;
+    font-size: small;
+    display: none;
+}
+
+.submit-button {
+    font-size: 1em;
+    background-color: var(--call-to-action-color);
+    min-width: 90%;
+    padding: 0.2em;
+}
+
+.result-container {
+    background-color: red;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    display: none;
+}
+
+@media (min-width:920px) {
+
+    .main-central-section {
+        max-width: 50%;
+    }
+}

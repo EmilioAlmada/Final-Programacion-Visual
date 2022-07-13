@@ -1,0 +1,94 @@
+@import './estilos.css';
+
+.main-section {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 80%;
+    padding: 1em;
+    background-color: var(--secondary-color);
+    color: var(--font-color);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    padding: 0.6em;
+    width: 90%;
+    color: var(--font-color);
+}
+
+.form-input {
+    margin: 1em;
+    font-size: 1.2em;
+    background-color: var(--background-color);
+    min-width: 90%;
+
+    color: var(--base-color);
+}
+
+.submit-button {
+    width: 90%;
+    padding: 1em;
+    border-radius: 0.5em;
+    background-color: var(--call-to-action-color);
+    color: var(--font-color);
+}
+
+.reservations {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: var(--secondary-color);
+    border-radius: 0.2em;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--font-color);
+    padding: 1em;
+}
+
+.reservation-title {
+    padding: 0.5em;
+}
+
+.reservation-list {
+    padding: 0.6em;
+    background-color: var(--call-to-action-color);
+    border-radius: 0.2em;
+    min-width: 50%;
+    margin: 1em;
+}
+
+.button-record {
+    padding: 0.7em;
+    list-style: none;
+    background-color: var(--secondary-color);
+}
+
+.record {
+    color: var(--base-color);
+    background-color: var(--background-color);
+    list-style: none;
+    padding: 0.5em;
+}
+
+.record-button {
+    cursor: pointer;
+    background-color: var(--call-to-action-color);
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 0.2em;
+    color: var(--font-color);
+    border: 1px solid var(--secondary-color);
+}
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(var(--indicator));
+}

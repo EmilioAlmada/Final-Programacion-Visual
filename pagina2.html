@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/estilos-pagina1.css">
+    <link rel="shortcut icon" href="./Imagenes/favicon.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Final - Emilio Almada</title>
+    <script src="./js/pageRedirection.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="page-menu">
+            <a href="./index.html">
+                <img class="header-logo" src="./Imagenes/favicon.jpg" alt="Personal-logo">
+            </a>
+            <div id="user-name">
+                Final - Emilio Almada
+            </div>
+            <div class="rigth-menu">
+                <a class="theme-button" id="light-button" onclick="setLightTheme()">
+                    <img id="light-image" class="theme-selector" src="./Imagenes/brightness-high.svg"/>
+                </a>
+                <a class="theme-button" id="dark-button" onclick="setDarkTheme()">
+                    <img id="dark-image" class="theme-selector" src="./Imagenes/moon.svg"/>
+                </a>
+                <div class="drop-menu-button">
+                    <img class="menu-icon" src="./Imagenes/list.svg"/>
+                    <div class="drop-menu">
+                        <div class="menu-item selected">
+                            <a class="page-menu-item" href="pagina1.html">Clases</a>
+                        </div>
+                        <div class="menu-item">
+                            <a class="page-menu-item" href="pagina2.html">Horarios</a>
+                        </div> 
+                        <!-- <div class="menu-item">
+                            <a class="page-menu-item" href="Pagina_Numeros.html">Adivinar Numero</a>
+                        </div>
+                        <div class="menu-item">
+                            <a class="page-menu-item" href="Pagina_Reservas.html">Reservas</a>
+                        </div>    
+                        <div class="menu-item">
+                            <a class="page-menu-item" href="Pagina_Api_Rest.html">Api Rest</a>
+                        </div> -->
+                        <div class="menu-item">
+                            <a class="page-menu-item" href="#" onclick="logOut()">Salir 🚪 </a>
+                        </div>         
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="hours-mobile">
+            <section class="mobile-hour-section">
+                <span>
+                    🕗 
+                </span>
+                <div class="hours-mobile-title">
+                    Taekwondo
+                </div>
+                <p class="hours-mobile-text">
+                    Martes Y Jueves: 20:00 a 22:00 hs
+                </p>
+            </section>
+            <section class="mobile-hour-section">
+                <span>
+                    🕗 
+                </span>
+                <div class="hours-mobile-title">
+                    Boxeo
+                </div>
+                <p class="hours-mobile-text">
+                    Lunes Y Viernes: 19:00 a 20:00 hs
+                </p>
+            </section>
+            <section class="mobile-hour-section">
+                <span>
+                    🕗 
+                </span>
+                <div class="hours-mobile-title">
+                    Natacion
+                </div>
+                <p class="hours-mobile-text">
+                    Lunes, Miercoles, Jueves, Viernes y Sabdos: 15:00 a 16:00 hs
+                </p>
+            </section>
+            <section class="mobile-hour-section">
+                <span>
+                    🕗 
+                </span>
+                <div class="hours-mobile-title">
+                    Escalada
+                </div>
+                <p class="hours-mobile-text">
+                    Miercoles y Sabados: 16:00 a 20:00 hs
+                </p>
+            </section>
+        </div>
+        <div class="hours-table-desktop">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Horarios</th>
+                        <th>Lunes</th>
+                        <th>Martes</th>
+                        <th>Miercoles</th>
+                        <th>Jueves</th>
+                        <th>Viernes</th>
+                        <th>Sabado</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>15:00</td>
+                        <td>Natacion</td>
+                        <td>-</td>
+                        <td>Natacion</td>
+                        <td>Natacion</td>
+                        <td>Natacion</td>
+                        <td>Natacion</td>
+                    </tr>
+                    <tr>
+                        <td>16:00</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>Escalada</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>Escalada</td>
+                    </tr>
+                    <tr>
+                        <td>17:00</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>Escalada</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>Escalada</td>
+                    </tr>
+                    <tr>
+                        <td>18:00</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>Escalada</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>Escalada</td>
+                    </tr>
+                    <tr>
+                        <td>19:00</td>
+                        <td>Boxeo</td>
+                        <td>-</td>
+                        <td>Escalada</td>
+                        <td>-</td>
+                        <td>Boxeo</td>
+                        <td>Escalada</td>
+                    </tr>
+                    <tr>
+                        <td>20:00</td>
+                        <td>-</td>
+                        <td>Taekwondo</td>
+                        <td>-</td>
+                        <td>Taekowndo</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>21:00</td>
+                        <td>-</td>
+                        <td>Taekwondo</td>
+                        <td>-</td>
+                        <td>Taekowndo</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>22:00</td>
+                        <td colspan="6">Horario de Cierre</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="gyms-map">
+            <h3 class="gyms-map-title">Gimnacios donde puedes encontrar estas actividades</h4>
+            <iframe class="gym-map" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d13136.293799824272!2d-58.38491396021882!3d-34.60230414648797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sgimnacio!5e0!3m2!1ses-419!2sar!4v1652132555153!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+    <footer>
+        <div id="pseudo-copyright">
+            Pagina realizada por Emilio Almada
+        </div>
+    </footer>
+    <script src="./js/themeControl.js"></script>
+    <script src="./js/cookieModule.js"></script>
+    <script src="./js/userName.js"></script>
+    <script src="./js/userAccountActions.js"></script>
+</body>
+</html>

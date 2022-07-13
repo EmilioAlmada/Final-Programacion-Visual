@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/estilos-index.css">
+    <link rel="shortcut icon" href="./Imagenes/favicon.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Final - Emilio Almada</title>
+    <script src="./js/pageRedirection.js"></script>
+</head>
+<body class="bg-pan-left">
+    <header>
+        <nav class="page-menu">
+            <a href="./index.html">
+                <img class="header-logo" src="./Imagenes/favicon.jpg" alt="Personal-logo">
+            </a>
+            Final - Emilio Almada
+            <div class="rigth-menu">
+                <a class="theme-button" id="light-button" onclick="setLightTheme()">
+                    <img id="light-image" class="theme-selector" src="./Imagenes/brightness-high.svg"/>
+                </a>
+                <a class="theme-button" id="dark-button" onclick="setDarkTheme()">
+                    <img id="dark-image" class="theme-selector" src="./Imagenes/moon.svg"/>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="main-central-section">
+                <h3 class="welcome-title">Bienvenido/a al Final de Emilio Almada</h3>
+                <p>
+                    Con el simbolo del sol <img id="light-image" class="theme-selector" src="./Imagenes/brightness-high.svg"/> y de la luna <img id="dark-image" class="theme-selector" src="./Imagenes/moon.svg"/> ubicados en el menu superior podes cambiar el tema de la pagina.
+                </p>
+        </section>
+        <section class="main-central-section">
+            <h3>Ingrese su usuario y contraseña</h3>
+            <form class="login-form">
+                <div class="result-container" id="result-container">
+                    <h3 class="login-error">
+                        ¡Ups! Usuario o contraseña incorrectos.
+                    </h3>
+                </div>
+                <label for="user" id="user-error" class="user-field-restriction-label">Solo se aceptan letras</label>
+                <input class="form-input" type="text" name="user" id="user" placeholder="Usuario" onchange="handleChange(event)">
+                <input class="form-input" type="password" id="password" name="password" placeholder="Password" onchange="handleChange(event)">
+                <button id="login-button" type="submit" class="submit-button" onclick="logIn(event)">Ingresar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div id="pseudo-copyright">
+            Pagina realizada por Emilio Almada
+        </div>
+    </footer>
+    <script src="./js/userAccountActions.js"></script>
+    <script src="./js/themeControl.js"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/estilos-pagina1.css">
+    <link rel="shortcut icon" href="./Imagenes/favicon.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Final - Emilio Almada</title>
+    <script src="./js/pageRedirection.js"></script>
+</head>
+<body class="bg-pan-left">
+    <header>
+        <nav class="page-menu">
+            <a href="./index.html">
+                <img class="header-logo" src="./Imagenes/favicon.jpg" alt="Personal-logo">
+            </a>
+            <div id="user-name">
+                Final - Emilio Almada
+            </div>
+            <div class="rigth-menu">
+                <a class="theme-button" id="light-button" onclick="setLightTheme()">
+                    <img id="light-image" class="theme-selector" src="./Imagenes/brightness-high.svg"/>
+                </a>
+                <a class="theme-button" id="dark-button" onclick="setDarkTheme()">
+                    <img id="dark-image" class="theme-selector" src="./Imagenes/moon.svg"/>
+                </a>
+                <div class="drop-menu-button">
+                    <img class="menu-icon" src="./Imagenes/list.svg"/>
+                    <div class="drop-menu">
+                        <div class="menu-item selected">
+                            <a class="page-menu-item" href="pagina1.html">Clases</a>
+                        </div>
+                        <div class="menu-item">
+                            <a class="page-menu-item" href="pagina2.html">Horarios</a>
+                        </div> 
+                        <!-- <div class="menu-item">
+                            <a class="page-menu-item" href="Pagina_Numeros.html">Adivinar Numero</a>
+                        </div>
+                        <div class="menu-item">
+                            <a class="page-menu-item" href="Pagina_Reservas.html">Reservas</a>
+                        </div>    
+                        <div class="menu-item">
+                            <a class="page-menu-item" href="Pagina_Api_Rest.html">Api Rest</a>
+                        </div> -->
+                        <div class="menu-item">
+                            <a class="page-menu-item" href="#" onclick="logOut()">Salir 🚪 </a>
+                        </div>           
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="sections-menu">
+            <a class="section-menu-item" href="#taekwondo-section">TaeKwon-Do</a>
+            <a class="section-menu-item" href="#boxeo-section">Boxeo</a>
+            <a class="section-menu-item" href="#natacion-section">Natacion</a>
+            <a class="section-menu-item" href="#escalada-section">Escalada</a>
+        </nav>
+    </header>
+    <main>
+        <section id="taekwondo-section">
+            <div class="section-title">
+                <h2>
+                    TaeKwon-Do
+                </h2>
+                <h4 class="activity-description-title">
+                    Descripcion de la actividad:
+                </h4>
+                <div class="description-text-image">
+                    <p class="activity-description-paragraph">
+                        Taekwondo es un arte marcial con el cual podes aprender defensa personal, mejora tu salud, El equilibrio, el balance interno, trabaja todo el cuerpo de forma uniforme y armonica, mejora tu estado fisico, y todo eso mientras haces amigos y desarrollas la perseverancia.
+                    </p>
+                    <div class="activity-image-continer">
+                        <img class="imagen-diciplina" src="./Imagenes/taekwondo.jpg" alt="taekwondo">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="boxeo-section">
+            <div class="section-title">
+                <h2>
+                    Boxeo
+                </h2>
+                <h4 class="activity-description-title">
+                    Descripcion de la actividad:
+                </h4>
+                <div class="description-text-image">
+                <p class="activity-description-paragraph">
+                    Los deportes de contacto son una opción genial para ponernos en forma o para complementar otra práctica deportiva, son divertidos, nos ayudan a manejar el estrés y la ansiedad y mejoran nuestra salud a nivel general.
+                </p>
+                <div class="activity-image-continer">
+                    <img class="imagen-diciplina" src="./Imagenes/Boxeo.webp" alt="taekwondo">
+                </div>
+                </div>
+            </div>
+        </section>
+        <section id="natacion-section">
+            <div class="section-title">
+                <h2>
+                    Natacion
+                </h2>
+                <h4 class="activity-description-title">
+                    Descripcion de la actividad:
+                </h4>
+                <div class="description-text-image">
+                <p class="activity-description-paragraph">
+                    Clases personalizadas, El oxígeno que utilizas para nadar activa tu cerebro y libera toxinas. Es más, al concentrarte en la respiración, tu cuerpo se relaja y se reduce la sensación de estrés. Esa inyección de endorfinas, la hormona del placer, también reduce tus niveles de ansiedad y mejora el estado de ánimo.
+                </p>
+                <div class="activity-image-continer">
+                    <img class="imagen-diciplina" src="./Imagenes/natacion.jpg" alt="taekwondo">
+                </div>
+                </div>
+            </div>
+        </section>
+        <section id="escalada-section">
+            <div class="section-title">
+                <h2>
+                    Escalada
+                </h2>
+                <h4 class="activity-description-title">
+                    Descripcion de la actividad:
+                </h4>
+                <div class="description-text-image">
+                <p class="activity-description-paragraph">
+                    Por medio de la escalada deportiva, vas a poder mejorar no solo tu estado fisico sino tu estado mental, el equilibrio, la concentracion, superar miedos, mejorar la fuerza del nucleo(core) de tu cuerpo.
+                </p>
+                <div class="activity-image-continer">
+                    <img class="imagen-diciplina" src="./Imagenes/escalada.jpg" alt="taekwondo">
+                </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="pseudo-copyright">
+            Pagina realizada por Emilio Almada
+        </div>
+    </footer>
+    <script src="./js/themeControl.js"></script>
+    <script src="./js/cookieModule.js"></script>
+    <script src="./js/userName.js"></script>
+    <script src="./js/userAccountActions.js"></script>
+</body>
+</html>

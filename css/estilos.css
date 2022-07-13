@@ -1,0 +1,264 @@
+:root{
+  /* --base-color:#EFEFEF; */
+  --base-color:#000000;
+  --background-color:#EEEEEE;
+  --font-color:#EEEEEE;
+  --shadow-color:#555555;
+  --primary-color:#112B3C;
+  --secondary-color:#205375;
+  --call-to-action-color:#f78539;
+  --font-primary: 'Roboto', sans-serif;
+  --font-secondary: 'Open Sans', sans-serif;
+  --indicator : 0;
+  --table-back-color:#EEEEEE;
+  --table-font-color:#000000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-primary);
+    font-weight: 700; 
+}
+
+
+body {
+  background-color: var(--background-color);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Header and Menu */
+
+header {
+  background-color: var(--secondary-color);
+  color: var(--font-color);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 5px var(--shadow-color);
+}
+
+nav {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.rigth-menu {
+  display: flex;
+  align-items: center;
+}
+
+.theme-button {
+  background-color: var(--call-to-action-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2em;
+  border-radius: 100%;
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 1em;
+}
+
+#ligth-button {
+  display: none;
+}
+
+.page-menu {
+  background-color: var(--secondary-color);
+  color: var(--font-color);
+  width: 100%;
+}
+
+.header-logo {
+  border-radius: 50%;
+  max-width: 2em;
+  margin: 0.5em;
+}
+
+.drop-menu-button {
+  background-color: var(--call-to-action-color);
+  margin-right: 0.5em;
+  position: relative;
+  border-radius: 4px;
+  padding: 0.5em;
+}
+
+.drop-menu {
+  background-color: var(--primary-color);
+  position: absolute;
+  border-radius: 5px;
+  display: none;
+  z-index: 1;
+  right: 1%;
+  top: 120%;
+}
+
+.menu-item {
+  padding: 0.7em 1em;
+}
+
+.drop-menu-button:hover .drop-menu{
+  display: block;
+}
+
+.sections-menu {
+  justify-content: space-around;
+}
+
+.section-menu-item {
+  background-color: var(--call-to-action-color);
+  color: var(--font-color);
+  margin-bottom: 0.2em;
+  border-radius: 5px;
+  text-align: center;
+  font-size: small;
+  padding: 0.2em;
+  width: 6em;
+}
+
+.page-menu-item {
+  color: var(--font-color);
+}
+/* Header and Menu */
+
+/* ---Main--- */
+
+main {
+  padding-top: 3.2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  margin: 1em 0 0 0;
+  padding-bottom:1em ;
+}
+
+h2 {
+  background-color: var(--primary-color);
+  padding: 0.2em;
+  color: white;
+}
+
+h4 {
+  background-color: var(--secondary-color);
+  border-bottom-right-radius: 20px;
+  box-shadow: 2px 2px #1b68e33d;
+  color: white;
+  padding: 0.2em;
+  width: 80%;
+}
+
+.main-central-section {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  max-width: 80%;
+  margin-top: 10em;
+  padding: 1em;
+  border-radius: 0.6em;
+  background-color: var(--secondary-color);
+  color: var(--font-color);
+  box-shadow: 5px 5px #06022c9c;
+}
+
+.welcome-title {
+  margin-bottom: 1em;
+}
+
+.buttons-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pages-button {
+  background-color: var(--call-to-action-color);
+  margin: 1em;
+  padding: 1em;
+  min-width: 80%;
+  text-align: center;
+  font-weight: 800;
+  border-radius: 0.5em;
+  box-shadow: 3px 3px var(--shadow-color);
+}
+
+span {
+  font-size: 3em;
+  position: absolute;
+  top:-30%
+}
+
+/* ---Main--- */
+
+/*  ---Footer---  */
+
+footer {
+  background-color: var(--base-color);
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+#pseudo-copyright {
+  text-align: center;
+  font-size: 0.8em;
+  font-weight: 700;
+  bottom: 0;
+  background-color: var(--background-color);
+  color: var(--base-color);
+}
+
+/*  ---Footer---  */
+
+/* ---Desktop layout--- */
+
+@media (min-width:920px) {
+
+  main {
+    padding-top: 4em;
+  }
+
+  table {
+    background-color: var(--call-to-action-color);
+    font-family: var(--font-secondary);
+    border-radius: 4px;
+    padding:0.5em
+  }
+
+  thead, td , th{
+    padding: 0.5em;
+  }  
+
+  th {
+    background-color: var(--primary-color);
+    color: var(--font-color);
+  }
+
+  tr {
+    background-color: var(--base-color);
+  }
+
+  td {
+    text-align: center;
+  }
+
+  .drop-menu {
+    top: 90%;
+  }
+
+  .main-central-section {
+    max-width: 50%;
+  }
+}
+
+/* ---Desktop Layout--- */

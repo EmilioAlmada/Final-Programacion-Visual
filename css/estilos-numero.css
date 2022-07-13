@@ -1,0 +1,60 @@
+@import './estilos.css';
+
+.game-main-screen {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.6em;
+    margin: 2em 1em 1em 1em;
+    color: var(--font-color);
+    background-color: var(--secondary-color);
+}
+
+.game-main-screen > h3 {
+    text-align: center;
+}
+
+.numer-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.number-input {
+    font-size: 2em;
+    color: var(--base-color);
+    background-color: var(--background-color);
+    text-align: center;
+    height: 1em;
+    width: 4em;
+    margin: 1em;
+}
+
+.submit-button {
+    border: none;
+    background-color: var(--call-to-action-color);
+    padding: 0.5em;
+    font-size: 1.5em;
+    border-radius: 0.2em;
+}
+
+.result-containter {
+    display: flex;
+    margin-top: 1em;
+}
+
+.success-message {
+    background-color: green;
+    display: none;
+    border-radius: 0.2em;
+    padding: 0.5em;
+    text-align: center;
+}
+
+.loser-message {
+    background-color: red;
+    display: none;
+    border-radius: 0.2em;
+    padding: 0.5em;
+    text-align: center;
+}

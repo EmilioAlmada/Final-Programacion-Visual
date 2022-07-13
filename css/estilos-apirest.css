@@ -1,0 +1,89 @@
+@import './estilos.css';
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 0.2em;
+    align-items: center;
+    background-color: var(--secondary-color);
+    color: var(--font-color);
+}
+
+.section-title {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em ;
+}
+
+.currencys-list {
+    padding: 0.5em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+}
+
+.currency-item {
+    color: var(--font-color);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    min-width: 200px;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    gap: 0.5em;
+    border-radius: 0.3em;
+    box-shadow: 3px 5px var(--call-to-action-color);
+}
+
+.item-title {
+    font-size: 1.2em;
+    font-weight: 800;
+}
+
+.spiner-container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    background-color: var(--call-to-action-color);
+    max-width: fit-content;
+    padding: 0.5em;
+    border-radius: 100%;
+}
+
+.spiner {
+    width: 2em;
+}
+
+.rotate-center {
+	-webkit-animation: rotate-center 1s ease-in-out infinite both;
+        animation: rotate-center 1s ease-in-out infinite both;
+}
+
+@-webkit-keyframes rotate-center {
+    0% {
+        -webkit-transform: rotate(0);
+            transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    }
+}
+@keyframes rotate-center {
+    0% {
+        -webkit-transform: rotate(0);
+            transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    }
+}
